@@ -35,10 +35,10 @@ function clockRunning(){
       second.style.transform = `rotate(${6*nowSecond}deg)`
   
       
-  if(nowHour>=7 && nowHour<12) partsOfTheDayBox.style.backgroundImage=`url(/images/morning.jpeg)`;
-  else if (nowHour>=12 && nowHour<17) partsOfTheDayBox.style.backgroundImage=`url(/images/afternoon.webp)`
-  else if (nowHour>=17 && nowHour<22) partsOfTheDayBox.style.backgroundImage=`url(/images/eveing.jpeg)`
-  else  partsOfTheDayBox.style.backgroundImage=`url(/images/night.jpeg)`
+  if(nowHour>=7 && nowHour<12) partsOfTheDayBox.style.backgroundImage=`url(./images/morning.jpeg)`;
+  else if (nowHour>=12 && nowHour<17) partsOfTheDayBox.style.backgroundImage=`url(./images/afternoon.webp)`
+  else if (nowHour>=17 && nowHour<22) partsOfTheDayBox.style.backgroundImage=`url(./images/eveing.jpeg)`
+  else  partsOfTheDayBox.style.backgroundImage=`url(./images/night.jpeg)`
 
 
 
@@ -70,7 +70,7 @@ dropDownMenu2.addEventListener('click',(e)=>{
   const selectedOption =e.target;
   if(selectedOption.tagName === 'LI'){
   const selectedClock=selectedOption.getAttribute('data-value');
-  analogclock.style.backgroundImage=`url(/images/clock-design-${selectedClock}.png)`;
+  analogclock.style.backgroundImage=`url(./images/clock-design-${selectedClock}.png)`;
   console.log(selectedClock);
   
   }
